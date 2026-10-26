@@ -1,6 +1,6 @@
 # mmdmap
 
-A local workspace for **Mermaid diagrams, Markdown documents, and DBML database schemas**, for macOS and Windows. Edit source and see live previews, follow links between documents, and explore your folder as a map. Files stay on your device.
+A local workspace for **Mermaid diagrams, Markdown documents, and DBML database schemas**, for macOS and Windows. Edit source and see live previews, follow links between documents, and explore your folder as a map. Arrange database tables, trace field relationships, and jump between entities and code. Drag the divider to resize the panels. Files stay on your device.
 
 **[Download a release](https://github.com/ayaganov/mmdmap-release/releases)** · **[Mermaid authoring skill](skills/mermaid-author/SKILL.md)**
 
