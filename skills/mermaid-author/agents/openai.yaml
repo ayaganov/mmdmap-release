@@ -1,0 +1,4 @@
+interface:
+  display_name: 'Mermaid Author'
+  short_description: 'Express process meaning with standard Mermaid syntax'
+  default_prompt: 'Use $mermaid-author to express the provided process in standard Mermaid, choosing meaningful blocks, branches, async paths, tooltips, and links.'

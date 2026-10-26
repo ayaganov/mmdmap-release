@@ -1,0 +1,19 @@
+---
+title: "profile.Merge"
+---
+%% Illustrative specification, not inferred implementation behavior.
+%% Input: user, optional preferences
+%% Returns: Profile
+flowchart TD
+    start(["Start"])
+    present{"Saved preferences present?"}
+    saved["Use saved preferences"]
+    defaults["Use default preferences"]
+    merge["Combine user identity and preferences"]
+    finish(["Return Profile"])
+    start --> present
+    present -->|"yes"| saved
+    present -->|"no"| defaults
+    saved --> merge
+    defaults --> merge
+    merge --> finish
