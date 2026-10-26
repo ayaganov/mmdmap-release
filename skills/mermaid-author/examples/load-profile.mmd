@@ -1,0 +1,23 @@
+---
+title: "profile.Load"
+config:
+  htmlLabels: true
+---
+%% Illustrative specification: unavailable responses end the operation.
+%% Input: userId
+%% Returns: Profile | unavailable
+flowchart TD
+    start(["Start"])
+    fetch@{ shape: subproc, label: "<span title='Use the supplied userId; return unavailable on a failed response.'>HTTP GET /api/users/{id}</span>" }
+    available{"User response successful?"}
+    preferences@{ shape: cyl, label: "Read optional user preferences" }
+    merge[["Merge profile and preferences"]]
+    unavailable(["Return unavailable"])
+    finish(["Return Profile"])
+    start --> fetch
+    fetch --> available
+    available -->|"no"| unavailable
+    available -->|"yes"| preferences
+    preferences --> merge
+    merge --> finish
+    click merge href "./merge-profile.mmd" "Keep user identity; apply saved preferences or defaults"
