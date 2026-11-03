@@ -1,6 +1,6 @@
 # mmdmap
 
-A local workspace for **Mermaid diagrams, Markdown documents, and DBML database schemas**, for macOS and Windows. Edit source and see live previews, follow links between documents, and explore your folder as a map. Arrange database tables, trace field relationships, and jump between entities and code. Drag the divider to resize the panels. Files stay on your device.
+A local workspace for **Mermaid, Markdown, DBML, and draw.io**, for macOS and Windows. Edit source with live previews, arrange database tables, or draw system architecture in a `.drawio` tab. Follow document links and explore your folder as a map. Files stay on your device; the bundled editors work offline.
 
 **[Download a release](https://github.com/ayaganov/mmdmap-release/releases)** · **[Mermaid authoring skill](skills/mermaid-author/SKILL.md)**
 
@@ -30,6 +30,6 @@ Choose your agent during installation; add `--global` to use the skill across pr
 
 For manual installation or a fixed version, download `mermaid-author-vVERSION.zip` from a release and copy the **whole `mermaid-author` folder** into your agent's skills directory.
 
-Application source is currently private. Source access holders can build with Node.js 24: run `npm ci`, then `npm run package` in the source checkout. Open the app under `release/`. Local builds update by rebuilding.
+Application source is currently private. Source access holders can build with Node.js 24: run `npm ci`, then `npm run package` in the source checkout. The first build downloads a pinned draw.io runtime; later builds can reuse its cache. Open the app under `release/`. Local builds update by rebuilding.
 
-[MIT license](LICENSE). Independent project, not an official Mermaid tool.
+[MIT license](LICENSE). Bundled draw.io retains its own license and notices. Independent project, not an official Mermaid or draw.io tool.
